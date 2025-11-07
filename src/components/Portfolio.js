@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FaShoppingCart, FaTasks, FaHandshake } from "react-icons/fa";
 import logo from './Images/MOC_Logo.jpeg';
 import USerImag from './Images/User_img.jpeg';
+import dpiitCertificate from './Images/DPIIT_Certificate.png';
 
 function Portfolio() {
   return (
@@ -32,8 +33,10 @@ function Portfolio() {
             <li className="nav-item"><a className="nav-link" href="#ih"> </a></li>
             <li className="nav-item"><a className="nav-link" href="#home">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
+            <li className="nav-item"><a className="nav-link" href="#product">Product</a></li>
             <li className="nav-item"><a className="nav-link" href="#projects">Works</a></li>
             <li className="nav-item"><a className="nav-link" href="#team">Team</a></li>
+            <li className="nav-item"><a className="nav-link" href="#recognitions">Recognitions</a></li>
             <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -137,6 +140,31 @@ function Portfolio() {
         </div>
       </section>
 
+      {/* Product Overview */}
+      <section id="product" className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
+        <div className="container">
+          <h2
+            className="text-3xl font-semibold mb-4"
+            style={{
+              color: "#1f6ea7",
+              textAlign: "center",
+              textDecoration: "none",
+              borderBottom: "none",
+              boxShadow: "none",
+              display: "block"
+            }}
+          >
+            What We&apos;re Building
+          </h2>
+          <p className="lead text-center mx-auto" style={{ maxWidth: 800 }}>
+            MoC Connect is a real-time communication and task-sharing app designed for local supermarkets and kirana stores.
+            Vendors can list grocery items, share prices, and receive customer orders directly through chat. Customers can send
+            lists, view prices, and coordinate pickups seamlessly — all in one app.
+          </p>
+        </div>
+      </section>
+
+
 
       {/* Our Works */}
       <section id="projects" className="bg-light py-5">
@@ -209,7 +237,7 @@ function Portfolio() {
         </h2>
         <div className="row g-4 text-center">
           {[ 
-            { Name:"Harika Gurazala",Desc:"Founder/Managing Director"},{Name:"Srinivas Gurazala",Desc:"Founder/Director"},{Name:"Pavan Kasiboina", Desc:"Founder/DevOps"}].map((role, index) => (
+            { Name:"Harika Gurazala",Desc:"Founder/Managing Director"},{Name:"Srinivas Gurazala",Desc:"Founder/Director"},{Name:"Pavan Kasiboina", Desc:"DevOps Engineer"}].map((role, index) => (
             <div key={index} className="col-md-4">
               <motion.div
                 className="card border-0 shadow-sm p-3"
@@ -225,6 +253,44 @@ function Portfolio() {
               </motion.div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Recognitions */}
+      <section id="recognitions" className="py-5">
+        <div className="container">
+          <div className="row justify-content-center mb-4">
+            <div className="col-lg-10 text-center">
+              <h2
+                className="text-3xl font-semibold mb-3"
+                style={{
+                  color: "#1f6ea7",
+                  textAlign: "center",
+                  textDecoration: "none",
+                  borderBottom: "none",
+                  boxShadow: "none",
+                  display: "block"
+                }}
+              >
+                Recognitions &amp; Partnerships
+              </h2>
+              <p className="mb-2 fw-semibold" style={{ color: "#1f6ea7" }}>
+                Recognized by DPIIT, Government of India
+              </p>
+              <p className="mb-4 text-muted">
+                Registered under Startup India (DPIIT No: DIPP226285)
+              </p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <img
+                src={dpiitCertificate}
+                alt="DPIIT Certificate of Recognition"
+                className="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -248,10 +314,21 @@ function Portfolio() {
             Have questions or want to collaborate? We’d love to hear from you.
           </div>
           <div className="text-center mb-1">
-            modeofcommunication25@gmail.com
+            info@mocconnect.in
           </div>
         </div>
       </section>
+
+      <footer className="py-3 bg-dark text-white text-center">
+        <div className="container">
+          <small>
+            © 2025 MOC CONNECT PRIVATE LIMITED | CIN: U62090AP2025PTC120137
+          </small>
+          <div>
+            <small>Registered Office: 1-1-1/12/A/B, 3rd line, Mittabazar, Barampet, Narasaraopet, Andhra Pradesh, India -522601.</small>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
