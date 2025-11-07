@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #1f6ea7;
+}
+
+/* Headings & Hero Titles */
+h1, h2, h3, h4, h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+}
+
+.header{
+  background-color: #1f6ea7;
+}
+.textcolour{
+  color:#1f6ea7 ;
+  text-align: center;
+}
+a:hover {
+  color: #155b89;
+}
+
+/* Optional — accent underline for section headers */
+section h2 {
+  border-bottom: 3px solid var(--primary-color);
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 1rem;
+}
